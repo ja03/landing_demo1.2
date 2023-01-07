@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello there</title>
+        <meta name="keywords" content="meta, elements" />
+        <meta name="robots" content="index,follow" />
+        <meta
+            name="description"
+            content="Welcome to the AI wonderland, traveler; I am the AI Genie, tell me your
+                    thoughts and ideas, and I'll use my magical abilities to reveal how you're feeling. "
+        />
+        <meta name="author" content="Ahmad Mahmoud" />
+        <meta name="revised" content="Saturday, Jan 7th, 2023, 2:57 am " />
+        <link rel="icon" href="hello.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="hello.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Pacifico&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                scroll-behavior: smooth;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url("back_AI_landing.svg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: #fff;
+                font-family: Comfortaa, Arial, Helvetica, sans-serif;
+                height: 100vh;
+                /* min-height: 110vh; */
+                /* background-repeat: ; */
+            }
+            main {
+                display: grid;
+                place-items: center;
+            }
+            .father {
+                width: 50%;
+                margin: 100px auto 0;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                background-color: #032b4a;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 30px;
+                padding: 40px;
+                box-sizing: border-box;
+            }
+            label {
+                width: 100%;
+                font-size: 22px;
+                /* margin-bottom: 20px; */
+                word-wrap: break-word;
+                word-break: keep-all;
+                line-height: 0.9cm;
+            }
+            textarea {
+                border-radius: 15px 0 15px 0;
+                /* padding: 5px; */
+                font-size: 16px;
+                /* margin-bottom: 20px; */
+                background-color: #fa7268;
+                opacity: 0.5;
+                border: 1px solid transparent;
+                outline: 0;
+                color: #fff;
+                font-size: 24px;
+                transition-duration: 0.25s;
+                word-wrap: break-word;
+                word-break: keep-all;
+                width: 100%;
+                min-width: 50px;
+            }
+            textarea:focus {
+                opacity: 1;
+            }
+            button {
+                cursor: pointer;
+                border-radius: 5px;
+                width: 40%;
+                height: 50px;
+                border: 1px solid transparent;
+                background-color: #fa7268;
+                font-size: 24px;
+                color: #fff;
+                /* min-width: 100px; */
+                /* max-width: 200px; */
+            }
+            @media screen and (max-width: 600px) {
+                .father {
+                    width: 80%;
+                    margin: 100px auto 0;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+                    background-color: #032b4a;
+                }
+                form {
+                    padding: 30px;
+                }
+                html,
+                body {
+                    height: 100%;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 0.5cm;
+                }
+                button {
+                    font-size: 18px;
+                    width: 150px;
+                    height: 25px;
+                }
+                textarea {
+                    font-size: 13px;
+                }
+            }
+            /* @media screen and (max-width: 400px) {
+                .father {
+                    width: 80%;
+                    margin: 100px auto 0;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+                    background-color: #032b4a;
+                }
+                form {
+                    padding: 30px;
+                }
+                html,
+                body {
+                    height: 100%;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 0.5cm;
+                }
+                button {
+                    width: 150px;
+                }
+                textarea {
+                    font-size: 13px;
+                }
+            } */
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="father">
+                <form action="#">
+                    <label for="feelings"
+                        >Hello, AI Genie speaking, tell me your thoughts and
+                        ideas, and I'll use my magical abilities to reveal how
+                        you're feeling.
+                    </label>
+
+                    <textarea
+                        name="userFeelings"
+                        id="feelings"
+                        cols="20"
+                        rows="4"
+                        maxlength="500"
+                        autofocus="autofocus"
+                        required="tell me your feelings first"
+                    ></textarea>
+                    <button type="submit">Send it</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
